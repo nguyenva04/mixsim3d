@@ -1,0 +1,8 @@
+{
+    "project": "drp3d",
+    "type_transform": "Cutout",
+    "temperature": 0.2,
+    "feature_dim": 256,
+    "projection_head": true,
+    "weak_label": true
+}

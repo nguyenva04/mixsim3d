@@ -1,0 +1,21 @@
+[build-system]
+
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "drp3d"
+version = "0.0.1"
+
+authors = [
+  { name="Van Thao NGUYEN", email="van-thao.nguyen@ifpen.fr" },
+]
+
+description = "MixSim3d for Digital Rock Physics"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools]
+packages = ["drp"]

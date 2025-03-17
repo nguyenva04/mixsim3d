@@ -1,0 +1,32 @@
+
+{
+    "project": "drp3d",
+    "task": "onehot",
+    "model": "resnet",
+    "tracking_uri": "file:./mlruns",
+    "volumes": [4419],
+    "optimizer": "adam",
+    "activation": "relu",
+    "seed": 1,
+    "train_test_ratio": 0.01,
+    "dim": 100,
+    "csv_pattern": "volume_{volume}_[100, 100, 100]_random.csv",
+    "mean": 32928.34934854074,
+    "std": 6935.238201002077,
+    "tqdm": true,
+    "resnet": 18,
+    "n_steps_by_batch": 10,
+    "scheduler": "step",
+    "devices": 1,
+    "regression": true,
+    "num_classes": 1,
+    "range": true,
+    "step_train": 2,
+    "strategy": "auto",
+    "mode": "gray",
+    "momentum": 0.9,
+    "dilation": 2,
+    "ckp_runid_class_model": "8882e9d6f184447f9626047befdd5eae",
+    "distributed": false
+
+}
